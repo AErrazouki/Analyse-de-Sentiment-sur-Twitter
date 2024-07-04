@@ -3,15 +3,20 @@ Ce projet vise à collecter des tweets en temps réel à l'aide de ntscraper de 
 
 # Fonctionnalités Clés :
 
-Collecte de Données : Utilisation de ntscraper pour collecter des tweets pertinents depuis Twitter via Nitter , en mode hashtag et avec un nombre spécifié.
+## Collecte de Données : 
+Utilisation de ntscraper pour collecter des tweets pertinents depuis Twitter via Nitter , en mode hashtag et avec un nombre spécifié.
 
-Exportation vers CSV : Les données collectées sont transformées en un DataFrame pandas pour une manipulation ultérieure. Ce DataFrame est ensuite exporté vers un fichier CSV nommé "ChatGPT_data.csv", contenant les colonnes pertinentes telles que le lien du tweet, le texte, la date, les likes et les commentaires.
+## Exportation vers CSV : 
+Les données collectées sont transformées en un DataFrame pandas pour une manipulation ultérieure. Ce DataFrame est ensuite exporté vers un fichier CSV nommé "ChatGPT_data.csv", contenant les colonnes pertinentes telles que le lien du tweet, le texte, la date, les likes et les commentaires.
 
-Prétraitement des Tweets : Chaque tweet est prétraité pour normaliser le texte en remplaçant les mentions d'utilisateurs par "@user" et en réduisant la longueur maximale du tweet à 128 caractères.
+## Prétraitement des Tweets : 
+Chaque tweet est prétraité pour normaliser le texte en remplaçant les mentions d'utilisateurs par "@user" et en réduisant la longueur maximale du tweet à 128 caractères.
 
-Analyse de Sentiment : Utilisation d'un modèle de traitement du langage naturel pour analyser le sentiment de chaque tweet. Le modèle attribue des scores de négativité, neutralité et positivité à chaque tweet.
+## Analyse de Sentiment : 
+Utilisation d'un modèle de traitement du langage naturel pour analyser le sentiment de chaque tweet. Le modèle attribue des scores de négativité, neutralité et positivité à chaque tweet.
 
-Stockage dans MongoDB : Les résultats de l'analyse de sentiment sont convertis en une liste de dictionnaires représentant chaque tweet avec ses scores associés. Ces données sont ensuite stockées dans une collection nommée "Nlp" dans une base de données MongoDB locale.
+## Stockage dans MongoDB : 
+Les résultats de l'analyse de sentiment sont convertis en une liste de dictionnaires représentant chaque tweet avec ses scores associés. Ces données sont ensuite stockées dans une collection nommée "Nlp" dans une base de données MongoDB locale.
 
 # Technologies Utilisées :
 
