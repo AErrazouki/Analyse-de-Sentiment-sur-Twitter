@@ -21,8 +21,11 @@ Les résultats de l'analyse de sentiment sont convertis en une liste de dictionn
 # Technologies Utilisées :
 
 Python pour le développement et l'automatisation du processus
+
 Pandas pour la manipulation des données et l'exportation vers CSV
+
 MongoDB pour le stockage des résultats d'analyse de sentiment
+
 Modèle de NLP pour l'analyse de sentiment, probablement basé sur des outils comme NLTK et des modèles pré-entraînés de traitement du langage naturel.
 
 # Objectifs du Projet :
